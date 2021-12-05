@@ -21,7 +21,7 @@ class GrideLayoutAdapter(mContext:Context?): RecyclerView.Adapter<GrideLayoutAda
         tools.let {
             it.add(Tool("Calculator",android.R.color.holo_blue_bright, ToolActivityEnum.Calculator))
             it.add(Tool("Archive",android.R.color.holo_red_dark, ToolActivityEnum.Archive))
-
+            it.add(Tool("Weather",android.R.color.holo_purple, ToolActivityEnum.Weather))
         }
     }
 

@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
+import com.tyr.example.kotlinexample.ApiService.Companion.TRANSLATE_BASE_URL
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -26,7 +27,7 @@ class ArchiveActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_translate)
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://fanyi.youdao.com/") // 设置 网络请求 Url
+            .baseUrl(TRANSLATE_BASE_URL) // 设置 网络请求 Url
             .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 支持RxJava
             .build()

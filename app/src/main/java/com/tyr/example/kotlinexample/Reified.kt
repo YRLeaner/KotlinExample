@@ -6,6 +6,7 @@ import android.util.Log
 import com.tyr.example.kotlinexample.ArchiveActivity
 import com.tyr.example.kotlinexample.CalCulateActivity
 import com.tyr.example.kotlinexample.ToolActivityEnum
+import com.tyr.example.kotlinexample.WeatherActivity
 
 /**
  * Created with Android Studio.
@@ -31,6 +32,8 @@ inline fun startActivity(context: Context, type:ToolActivityEnum){
                 startActivity<CalCulateActivity>(context)
             ToolActivityEnum.Archive->
                 startActivity<ArchiveActivity>(context)
+            ToolActivityEnum.Weather->
+                startActivity<WeatherActivity>(context)
             else->
                 Log.d("TODO","TODO()")
         }

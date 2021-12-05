@@ -22,6 +22,7 @@
 
         <activity android:name=".CalCulateActivity"></activity>
         <activity android:name=".ArchiveActivity"></activity>
+        <activity android:name=".WeatherActivity"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>
